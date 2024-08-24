@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>2047</title>
+</head>
+<body>
+   
+    <section class="calculadora">
+        <div class="calc">
+        <h1>Numero decimal para binario</h1>
+    
+            <div class="box-dec">
+                <input id="dec" type="text" placeholder="numero decimal" onchange="transformar(this.value)">
+            </div>
+    
+            <div class="box-bin">
+                <h2 id="resultado">0</h2>
+            </div>
+
+            <label for="troca"><strong>Binario para Decimal</strong></label>
+            <a href="troca.html" name="troca"><img src="arrow.png" alt="seta girando" class="seta"></a>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Tiago Abraão. Todos os direitos reservados.
+    </footer>
+</body>
+<style>
+
+    body {
+        background-color: #5b3ef2;
+    }
+
+    input {
+        width: 296px;
+        height: 98px;
+        font-size: 2rem;
+        background-color: #bb85ff;
+        color: black;
+        border: none;
+        outline: none;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        background-color: #9b6dfb;
+        color: black;
+        margin-top: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .calc {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #7b56f6;
+        width: 500px;
+        height: 500px;
+        margin-top: 43px;
+        border-radius: 20px;
+    }
+
+    #placeholder {
+        letter-spacing: 10px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+    .box-bin {
+        background-color: #9b6dfb;
+        width: 300px;
+        height: 100px;
+        border-radius: 7px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-top: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .seta {
+        width: 30px;
+        height: 30px;
+        transition: 0.4s;
+    }
+
+    .seta:hover {
+        transform: rotate(190deg);
+        transition: 0.4s;
+    }
+
+    label {
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+</style>
+</html>
